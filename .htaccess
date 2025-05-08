@@ -1,0 +1,11 @@
+# Aktifkan mod_rewrite
+RewriteEngine On
+
+# Mengarahkan dari URL dengan .html ke URL tanpa .html
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Mengarahkan permintaan tanpa ekstensi .html ke file .html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

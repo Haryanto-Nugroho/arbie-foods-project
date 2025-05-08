@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbie Food</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/LOGO.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="nav-left">
+                <img src="assets/img/LOGO.png" alt="Arbie Foods">
+                <h3 class="logo">Arbie Food</h3>
+            </div>
+            <div class="nav-right">
+                <div class="menu-nav">
+                    <ul class="nav-List">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="contact-hover"><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="bi bi-list"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="view">
+        <main>
+            <div class="m-container">
+                <div class="iklan">
+                    <div class="text-content">
+                        <h1 class="nol">Manisnya Kenangan dalam setiap gigitan</h1>
+                        <h1 class="satu">Manisnya Kenangan dalam setiap gigitan</h1>
+                    </div>
+                </div>
+                <a href="product.html"><button class="lihat-product">View Product</button></a>
+                <div class="decor">
+                    <div class="inner">
+                        <img src="assets/img/dekor1.png" alt="" class="dekor1">
+                        <img src="assets/img/dekor1.png" alt="" class="dekor2">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="polaroid">
+                <img src="assets/img/web-06.png" alt="Product Image" width="600px" style="margin: 0;">
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div class="chessboard"></div>
+        <div class="chessboard-invers"></div>
+        <div class="copy">
+            <div class="brand">Arbie Food</div>
+            <div class="menu-copy">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="kosong"></div>
+        </div>
+        <div class="garis">
+            <div class="hr-lines"></div>
+        </div>
+        <div class="copyright">
+            <div class="label">&copy; 2024 Arbie Food</div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        const tombol = document.querySelector('.icon');
+        const menu = document.querySelector('.nav-List');
+        const navbar = document.querySelector('.nav-container')
+        tombol.addEventListener('click', () => {
+            menu.classList.toggle('aktif');
+            navbar.classList.toggle('aktif');
+        });
+    </script>
+</body>
+</html>
